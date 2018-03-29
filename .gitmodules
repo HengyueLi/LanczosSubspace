@@ -1,0 +1,15 @@
+[submodule "Depe/FermionHamiltonian"]
+	path = Depe/FermionHamiltonian
+	url = https://github.com/HengyueLi/FermionHamiltonian
+[submodule "Depe/Fermion_Table"]
+	path = Depe/Fermion_Table
+	url = https://github.com/HengyueLi/Fermion_Table
+[submodule "Incl/ListStructure"]
+	path = Incl/ListStructure
+	url = https://github.com/HengyueLi/ListStructure
+[submodule "Install"]
+	path = Install
+	url = https://github.com/HengyueLi/Fortran_Install
+[submodule "Depe/MatrixOperations"]
+	path = Depe/MatrixOperations
+	url = https://github.com/HengyueLi/MatrixOperations
