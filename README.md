@@ -72,8 +72,10 @@ In the following example, a two-sites system will be diagonalized. The ground st
     ! Subid:
     !   Because in this system we have set symmetry = 0, there is only one subspace. So set subid = 1
     !   If in the case symmetry is not 0, there will be many subspaces. And this module can only to
-    !   solver one subspace. How to know which subspace are you interested?(how to set subid). You should
-    !   check the usage of Table. You can find out method to fix the subspace you are interested in.
+    !   solver one subspace.(But you can use many of this objects to study all the spaces. However you do
+    !   not need to do that because I have done this for your in another object). How to know which
+    !   subspace are you interested?(how to set subid). You should check the usage of Table.
+    !   You can find out method to fix the subspace you are interested in.
     !   For example you can chose a subspace that marked by total number of particle is 4,
     !   or by total number of spin up and spin down.
     call Lanczos%Initialization(Ta=ta,IsReal=.True.,H=H,subid=1)
