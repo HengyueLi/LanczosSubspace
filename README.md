@@ -3,7 +3,7 @@
 Fortran(2003)  + lapack
 
 ## Introduction
-For a fermion (spin 1/2) system, we can study it by diagonalizing it Hamiltonian. After that, all the physical qunatities can be calculated by the wave function. This module provide methods to do this by Lanczos method. We can consider the symmetry of the system thus separate the Hamiltonian into different blocks(subspaces). We can study each subspace by this module.</br>
+For a fermion (spin 1/2) system, we can study it by diagonalizing its Hamiltonian. After that, all the physical quantities can be calculated by the wave function. This module provides methods to do this by the Lanczos method. We can consider the symmetry of the system thus separate the Hamiltonian into different blocks(subspaces). We can study each subspace by this module.</br>
 
 ## Usage
 Follow the steps in /Install.
