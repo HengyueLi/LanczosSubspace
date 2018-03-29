@@ -3,7 +3,11 @@
 Fortran(2003)  + lapack
 
 ## Introduction
-For a fermion (spin 1/2) system, we can study it by diagonalizing its Hamiltonian. After that, all the physical quantities can be calculated by the wave function. This module provides methods to do this by the Lanczos method. We can consider the symmetry of the system thus separate the Hamiltonian into different blocks(subspaces). We can study each subspace by this module.</br>
+For a fermion (spin 1/2) system, we can study it by Exact Diagonalization (ED) of its Hamiltonian. After that, all the physical quantities can be calculated by the wave functions. This module provides methods to do this by the Lanczos method (see Method for details). We can consider the symmetry of the system thus separate the Hamiltonian into different blocks(subspaces). We can study each subspace by this module.</br>
+
+## Method: Lanczos + iteration
+The general Lanczos method is to create a Krylov space of dimension D, after which a new representation is used to diagonalize H. If the precision(usually for the energy) is not reached, increase D to D+1, D+2,... until energy is converged. The drawback of this method is sometimes it is very memory-costly. And what's more, the orthogonality may be lost because of the low level of machine precision. </br>&nbsp;
+The basic ideal of iteration here is to fix D at a small value. After we diagonalized H, we can obtain a ground state. Use this state as a guessed input to diagonalize H again. After this, both the ground state and energy becomes more precise. Do this repeatedly until the energy is converged.
 
 ## Usage
 Follow the steps in /Install.
